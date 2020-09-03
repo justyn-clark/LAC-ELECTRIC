@@ -1,0 +1,96 @@
+{
+  "title": "Home",
+  "navigation": [
+    { "path": "/about", "label": "About Us" },
+    { "path": "/services", "label": "Services" },
+    { "path": "/projects", "label": "Projects" },
+    { "path": "/contact", "label": "Contact Us" }
+  ],
+  "serviceTypes": [
+    {
+      "title": "Residential Electrician",
+      "info": "Mishaps in the supply of power for any reason can lead to great inconveniences for you, your family or other occupants of the residential premises.",
+      "image": "img1.jpg"
+    },
+    {
+      "title": "Commercial Electrician",
+      "info": "As a business owner, you have to think about what to do about the power outages which may be caused by weather or mechanical failures.",
+      "image": "img2.jpg"
+    },
+    {
+      "title": "Industrial Electrician",
+      "info": "Our electricians are well trained to perform their tasks with a lot of precision and care which are offered in explosion-proof environments.",
+      "image": "img3.jpg"
+    }
+  ],
+  "services": {
+    "title": "Our Services",
+    "items": [
+      {
+        "title": "New Construction",
+        "info": "Custom homes, Multi-family, Spec homes, Complete Electric and lighting installations",
+        "image": "service1.jpg"
+      },
+      {
+        "title": "Service Upgrades",
+        "info": "Single family, Apartments, Condominiums, Commercial, Businesses, Residential",
+        "image": "service2.jpg"
+      },
+      {
+        "title": "Tenant Improvement",
+        "info": "Leasing offices, Retail spaces, Business, Commercial buildings, Lighting automation",
+        "image": "service3.jpg"
+      },
+      {
+        "title": "Emergency Power",
+        "info": "Stand by generator sets, Emergency inverters, UPS systems, Troubleshooting, Service calls",
+        "image": "service4.jpg"
+      }
+    ]
+  },
+  "projects": {
+    "title": "Recent Projects",
+    "info": "Below you can see some shots from our recent projects. There are some photos from our Residential, Commercial, Industrial works",
+    "cta": "View all projects",
+    "imagesRecent": [
+      { "src": "kensignton1.JPG" },
+      { "src": "kensignton2.JPG" },
+      { "src": "newHall1.JPG" },
+      { "src": "newHall2.JPG" }
+    ],
+    "imagesAll": [
+      { "src": "kensignton1.JPG" },
+      { "src": "kensignton2.JPG" },
+      { "src": "newHall1.JPG" },
+      { "src": "newHall2.JPG" },
+      { "src": "1.jpg" },
+      { "src": "2.jpg" },
+      { "src": "3.jpg" },
+      { "src": "4.jpg" },
+      { "src": "5.jpg" },
+      { "src": "6.jpg" },
+      { "src": "7.jpg" },
+      { "src": "8.jpg" },
+      { "src": "9.jpg" },
+      { "src": "10.jpg" },
+      { "src": "11.jpg" },
+      { "src": "12.jpg" },
+      { "src": "13.jpg" }
+    ]
+  },
+  "about": {
+    "info": {
+      "title": "Company Information",
+      "desc": "LAC Electric Inc. Is an independent electrical contracting firm located in the heart of San Fernando Valley, California, serving the greatest Los Angeles County and neighboring cities for over 18 years and counting and more than 60 years of combined experience with expertise in commercial and residential installations on new and remodeling buildings, our staff have successfully completed a variety of projects for the private and public sector construction industry.\nNow you can download LAC Electric Inc."
+    },
+    "objectives": {
+      "title": "Company Objectives",
+      "desc": "At LAC Electric Inc. our main goal is to provide our clients with the best possible experience and customer service available whether is just  a simple installation to a complete new system, we gladly help our customers make their dreams come true in a timely manner and budget, quality, honesty, reliable and friendly are just a few qualifications we have received from our satisfied clients over the years in service."
+    }
+  },
+  "contact": {
+    "address": "7821 Noble Ave., Van Nuys, CA, 91405",
+    "email": "info@lacelectric.com",
+    "phone": "(818) 994-9701"
+  }
+}
