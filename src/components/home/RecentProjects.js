@@ -77,6 +77,7 @@ const RecentProjects = () => {
                     fetchAllImageContent(allImageContent, image, 'src').node
                       .fluid
                   }
+                  alt={image.src.replace(/-/g, ' ')}
                 />
               </div>
             );

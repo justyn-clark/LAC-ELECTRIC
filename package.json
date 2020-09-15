@@ -1,5 +1,5 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "lac-electric",
   "private": true,
   "version": "0.1.0",
   "dependencies": {
@@ -24,8 +24,10 @@
     "normalize.css": "^8.0.1",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
+    "react-awesome-slider": "^4.1.0",
     "react-dom": "^16.12.0",
     "react-helmet": "^6.1.0",
+    "react-icons": "^3.11.0",
     "styled-components": "^5.1.1",
     "stylelint": "^13.6.1",
     "stylelint-config-recommended": "^3.0.0",

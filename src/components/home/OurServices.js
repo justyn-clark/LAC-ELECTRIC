@@ -66,12 +66,13 @@ export default () => {
                 <Img
                   className="img"
                   fadeIn={false}
+                  alt={item.title}
                   fluid={
                     fetchAllImageContent(allImageContent, item, 'image').node
                       .fluid
                   }
                 />
-                <h4>{item.title}</h4>
+                <h3>{item.title}</h3>
                 <p>{item.info}</p>
               </div>
             );

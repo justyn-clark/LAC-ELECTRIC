@@ -1,8 +1,12 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 export const useIsLagerThanTablet = (cb) => {
+  const [isMobile, setIsMobile] = useState(false);
   const handler = (e) => {
-    if (e.matches) cb();
+    if (e.matches) {
+      cb && cb();
+      setIsMobile(true);
+    } else setIsMobile(false);
   };
 
   useEffect(() => {
@@ -11,5 +15,7 @@ export const useIsLagerThanTablet = (cb) => {
     return () => {
       mql.removeEventListener('change', handler);
     };
-  });
+  }, []);
+
+  return isMobile;
 };

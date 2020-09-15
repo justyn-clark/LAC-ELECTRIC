@@ -1,7 +1,7 @@
 import { useStaticQuery, graphql } from 'gatsby';
 
 export const useSiteData = () => {
-  const { contentJson, allImageContent, pdf } = useStaticQuery(
+  const { allImageContent, contentJson, pdf } = useStaticQuery(
     graphql`
       query Content {
         pdf: allFile(filter: { extension: { eq: "pdf" } }) {
@@ -15,7 +15,7 @@ export const useSiteData = () => {
         allImageContent: allImageSharp {
           edges {
             node {
-              fluid {
+              fluid(maxWidth: 1440) {
                 originalName
                 ...GatsbyImageSharpFluid
               }
@@ -37,16 +37,30 @@ export const useSiteData = () => {
             email
             phone
           }
+          reviews {
+            id
+            text
+            rating
+            user {
+              name
+            }
+          }
           projects {
+            title
+            info
             cta
+            galleryFilter {
+              name
+            }
+            nveApartments {
+              src
+            }
             imagesRecent {
               src
             }
             imagesAll {
               src
             }
-            info
-            title
           }
           about {
             info {
@@ -72,5 +86,9 @@ export const useSiteData = () => {
     `,
   );
 
-  return { ...contentJson, allImageContent, pdf };
+  return {
+    ...contentJson,
+    allImageContent,
+    pdf,
+  };
 };

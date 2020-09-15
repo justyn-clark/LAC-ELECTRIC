@@ -18,3 +18,14 @@ export const fetchAllImageContent = (arr, item, name) => {
     (element) => element.node.fluid.originalName === item[name],
   );
 };
+
+export const debounce = (fn, ms) => {
+  let timer;
+  return (_) => {
+    clearTimeout(timer);
+    timer = setTimeout((_) => {
+      timer = null;
+      fn.apply(this, arguments);
+    }, ms);
+  };
+};

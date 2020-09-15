@@ -2,6 +2,10 @@ import { createGlobalStyle } from 'styled-components';
 import 'normalize.css';
 
 const GlobalStyle = createGlobalStyle`
+  .awssld {
+    --organic-arrow-color: white;
+    --loader-bar-color: #f20079;
+    }
   * {
     margin: 0;
   }
@@ -22,14 +26,13 @@ const GlobalStyle = createGlobalStyle`
 
   body {
     font-family: 'Roboto Condensed', Helvetica, Arial, sans-serif;
-    overflow-x: hidden;
-    // overflow-y: ${({ open }) => (open ? 'hidden' : 'visible')};  
     background: white;
+    overflow: ${({ modalOpen }) => (modalOpen ? 'hidden' : 'visible')};  
+    overflow-x: hidden;
   }
   
   main {
     height: 100%;
-    position: relative;
   } 
   
   h1, h2, h3, h4 {
@@ -37,6 +40,7 @@ const GlobalStyle = createGlobalStyle`
   }
   
   h1 {  
+    margin-bottom: 0;
     color: #1e283a;    
     font-size: 36px;
     font-weight: 700;

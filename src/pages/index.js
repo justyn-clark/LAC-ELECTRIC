@@ -5,6 +5,7 @@ import Hero from '../components/home/Hero';
 import ServiceTypes from '../components/home/ServiceTypes';
 import OurServices from '../components/home/OurServices';
 import RecentProjects from '../components/home/RecentProjects';
+import Reviews from '../components/Reviews';
 
 const IndexPage = () => {
   return (
@@ -15,6 +16,7 @@ const IndexPage = () => {
         <ServiceTypes />
         <OurServices />
         <RecentProjects />
+        <Reviews />
       </Layout>
     </>
   );

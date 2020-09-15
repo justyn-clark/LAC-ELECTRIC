@@ -1,26 +1,26 @@
 {
   "title": "Home",
   "navigation": [
-    { "path": "/about", "label": "About Us" },
-    { "path": "/services", "label": "Services" },
     { "path": "/projects", "label": "Projects" },
+    { "path": "/services", "label": "Services" },
+    { "path": "/about", "label": "About Us" },
     { "path": "/contact", "label": "Contact Us" }
   ],
   "serviceTypes": [
     {
       "title": "Residential Electrician",
       "info": "Mishaps in the supply of power for any reason can lead to great inconveniences for you, your family or other occupants of the residential premises.",
-      "image": "img1.jpg"
+      "image": "ProjectPictures-6.jpg"
     },
     {
       "title": "Commercial Electrician",
       "info": "As a business owner, you have to think about what to do about the power outages which may be caused by weather or mechanical failures.",
-      "image": "img2.jpg"
+      "image": "ProjectPictures-308.jpg"
     },
     {
       "title": "Industrial Electrician",
       "info": "Our electricians are well trained to perform their tasks with a lot of precision and care which are offered in explosion-proof environments.",
-      "image": "img3.jpg"
+      "image": "ProjectPictures-90.jpg"
     }
   ],
   "services": {
@@ -52,36 +52,37 @@
     "title": "Recent Projects",
     "info": "Below you can see some shots from our recent projects. There are some photos from our Residential, Commercial, Industrial works",
     "cta": "View all projects",
+    "galleryFilter": [
+      { "name": "Buildings" },
+      { "name": "Lighting" },
+      { "name": "Electrical Rooms" },
+      { "name": "Equipment" },
+      { "name": "Details" }
+    ],
+    "nveApartments": [
+      { "src": "nve-6.jpg" },
+      { "src": "nve-10.jpg" },
+      { "src": "nve-27.jpg" },
+      { "src": "nve-40.jpg" },
+      { "src": "nve-48.jpg" }
+    ],
     "imagesRecent": [
-      { "src": "kensignton1.JPG" },
-      { "src": "kensignton2.JPG" },
-      { "src": "newHall1.JPG" },
-      { "src": "newHall2.JPG" }
+      { "src": "nve-6.jpg" },
+      { "src": "nve-10.jpg" },
+      { "src": "nve-27.jpg" },
+      { "src": "nve-40.jpg" }
     ],
     "imagesAll": [
       { "src": "kensignton1.JPG" },
       { "src": "kensignton2.JPG" },
       { "src": "newHall1.JPG" },
-      { "src": "newHall2.JPG" },
-      { "src": "1.jpg" },
-      { "src": "2.jpg" },
-      { "src": "3.jpg" },
-      { "src": "4.jpg" },
-      { "src": "5.jpg" },
-      { "src": "6.jpg" },
-      { "src": "7.jpg" },
-      { "src": "8.jpg" },
-      { "src": "9.jpg" },
-      { "src": "10.jpg" },
-      { "src": "11.jpg" },
-      { "src": "12.jpg" },
-      { "src": "13.jpg" }
+      { "src": "newHall2.JPG" }
     ]
   },
   "about": {
     "info": {
       "title": "Company Information",
-      "desc": "LAC Electric Inc. Is an independent electrical contracting firm located in the heart of San Fernando Valley, California, serving the greatest Los Angeles County and neighboring cities for over 18 years and counting and more than 60 years of combined experience with expertise in commercial and residential installations on new and remodeling buildings, our staff have successfully completed a variety of projects for the private and public sector construction industry.\nNow you can download LAC Electric Inc."
+      "desc": "LAC Electric Inc. Is an independent electrical contracting firm located in the heart of San Fernando Valley, California, serving the greatest Los Angeles County and neighboring cities for over 18 years and counting and more than 60 years of combined experience with expertise in commercial and residential installations on new and remodeling buildings, our staff have successfully completed a variety of projects for the private and public sector construction industry."
     },
     "objectives": {
       "title": "Company Objectives",
@@ -92,5 +93,35 @@
     "address": "7821 Noble Ave., Van Nuys, CA, 91405",
     "email": "info@lacelectric.com",
     "phone": "(818) 994-9701"
-  }
+  },
+
+  "reviews": [
+    {
+      "id": "xYiMGdXsuj_P-gkETYR99A",
+      "text": "Professional, on time, & efficient! We found out about them through several friends. If you need recessed lights installed, or any electrical work, these are the guys to call. Prices are competitive and they are very efficient. Satisfied with the results!",
+      "rating": 5,
+      "user": {
+        "id": "yy_ovHBTqnoxR0MXlRJdDg",
+        "name": "zachu m"
+      }
+    },
+    {
+      "id": "lR-eOylQA2C_pGILzuKEJw",
+      "text": "I can't recommend them more highly.  They have done lots of work for me including installing recessed lighting cans in two rooms and a chandelier in another.  As well as putting additional lighting sockets where needed.  They are always on time, as nice as can be, exceedingly knowledgeable and very efficient.  They left my rooms cleaner than when they arrived.  Simply the best!",
+      "rating": 5,
+      "user": {
+        "id": "PiEXmK0zAmrUa-wATxADlQ",
+        "name": "Gracie H."
+      }
+    },
+    {
+      "id": "CcG4YoKXLDaAsMzWZxJmsg",
+      "text": "I would like to thank LAC electrical for the superior job they did in upgrading my amps! I had 3 different contractors out to do the job and they couldn't get it done. One call to LAC and everything was done in a timely manner. Paco was a really straight shooter, honest and reputable. The company is the very best.!",
+      "rating": 5,
+      "user": {
+        "id": "LeftFdh3GMcd9hag-_110Q",
+        "name": "Richard D."
+      }
+    }
+  ]
 }

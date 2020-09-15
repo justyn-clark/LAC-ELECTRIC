@@ -1,15 +1,20 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
+import { debounce } from '../helper';
 
 export const useIsLagerThanTablet = (cb) => {
-  const handler = (e) => {
-    if (e.matches) cb();
-  };
-
+  const [isLagerThanTablet, setIsLagerThanTablet] = useState(false);
+  const handler = debounce(() => {
+    if (window.innerWidth > 768) {
+      cb();
+      setIsLagerThanTablet(true);
+    }
+  }, 60);
   useEffect(() => {
-    let mql = window.matchMedia('(min-width: 768px)');
-    mql.addEventListener('change', handler);
+    window.addEventListener('resize', handler);
     return () => {
-      mql.removeEventListener('change', handler);
+      window.removeEventListener('resize', handler);
     };
-  });
+  }, []);
+
+  return isLagerThanTablet;
 };

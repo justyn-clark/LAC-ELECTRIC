@@ -21,6 +21,18 @@ const Content = styled.div`
 		flex-direction: row;
 		justify-content: space-between;
 	`}
+  a {
+    text-decoration: none;
+  }
+  .icon {
+    svg {
+      transition: color ease 300ms;
+      &:hover {
+        color: #1e283a;
+        transition: color ease 300ms;
+      }
+    }
+  }
 `;
 
 const ServiceTypes = () => {
@@ -33,27 +45,31 @@ const ServiceTypes = () => {
             return (
               <Box key={i}>
                 <div className="top">
-                  <h4>{item.title}</h4>
+                  <p className="title">{item.title}</p>
                   <p>{item.info}</p>
-                  <Icon
-                    icon={'arrow-circle-o-right'}
-                    size="24px"
-                    padding="1rem 0 0"
-                  />
+                  <Link aria-label="link to services" to={'/services'}>
+                    <Icon
+                      icon={'arrow-circle-o-right'}
+                      size="24px"
+                      padding="1rem 0 0"
+                      className="icon"
+                    />
+                  </Link>
                 </div>
                 <div className="bottom">
                   <Link to={'/services'}>
                     <Img
-                      fadeIn={false}
-                      fadeIn={false}
                       fadeIn={false}
                       className="img"
                       fluid={
                         fetchAllImageContent(allImageContent, item, 'image')
                           .node.fluid
                       }
+                      alt={item.image.replace(/-/g, ' ')}
                     />
-                    <div className="overlay" />
+                    <div className="overlay">
+                      <Icon icon={'expand'} size="30px" />
+                    </div>
                   </Link>
                 </div>
               </Box>

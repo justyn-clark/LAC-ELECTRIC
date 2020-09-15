@@ -1,17 +1,23 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
 import GlobalStyle from '../global-styles';
 import { useStaticQuery, graphql } from 'gatsby';
 import TopBar from '../components/TopBar';
 import Header from '../components/header';
+import Modal from '../components/Modal';
+import ScrollTop from '../components/ScrollTop';
 import Footer from './footer';
-
-const Main = styled.main`
-  // margin: 0 auto 4rem;
-`;
+import {
+  GlobalDispatchContext,
+  GlobalStateContext,
+} from '../context/GlobalContextProvider';
 
 const Layout = ({ children }) => {
+  const state = useContext(GlobalStateContext);
+  const dispatch = useContext(GlobalDispatchContext);
+  const node = React.useRef();
+  const { modalOpen } = state;
+
   const data = useStaticQuery(graphql`
     query Layout {
       site {
@@ -23,17 +29,20 @@ const Layout = ({ children }) => {
   `);
   return (
     <>
-      <link
-        rel="stylesheet"
-        href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
-        crossOrigin="anonymous"
-      />
       <TopBar />
       <Header siteTitle={data.site.siteMetadata.title} />
-      <Main>{children}</Main>
+      <main>{children}</main>
       <Footer />
-      <GlobalStyle />
+      <div ref={node}>
+        {modalOpen && (
+          <Modal
+            modalOpen={modalOpen}
+            onClick={() => modalOpen && dispatch({ type: 'SET_MODAL_STATE' })}
+          />
+        )}
+      </div>
+      <ScrollTop modalOpen={modalOpen} />
+      <GlobalStyle modalOpen={modalOpen} />
     </>
   );
 };
@@ -42,4 +51,4 @@ Layout.propTypes = {
   children: PropTypes.node.isRequired,
 };
 
-export default Layout;
+export default React.memo(Layout);

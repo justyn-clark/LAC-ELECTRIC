@@ -6,8 +6,6 @@ import HR from '../components/HR';
 import PageInnerWrap from '../components/PageInnerWrap';
 import { useSiteData } from '../hooks/useSiteData';
 
-// import pdf from 'static/LAC_Job_Application_Form.pdf';
-
 const Content = styled(PageInnerWrap)`
   width: 80vw;
   margin: 0 auto;
@@ -15,18 +13,12 @@ const Content = styled(PageInnerWrap)`
   h3 {
     padding-bottom: 1rem;
   }
-  a {
-    color: #1e283a;
-    // text-decoration: none;
-  }
 `;
 
 const About = () => {
   const {
     about: { info, objectives },
-    pdf,
   } = useSiteData();
-  const applicationPDF = pdf?.edges[0]?.node?.publicURL;
   return (
     <Layout>
       <SEO title="About" />
@@ -35,14 +27,6 @@ const About = () => {
         <HR />
         <h3>{info.title}</h3>
         <p>{info.desc}</p>
-        <br />
-        <p>
-          Please download{' '}
-          <a href={applicationPDF} target="_blank">
-            PDF
-          </a>{' '}
-          file, fill it and send it to our email!
-        </p>
         <br />
         <h3>{objectives.title}</h3>
         <p>{objectives.desc}</p>

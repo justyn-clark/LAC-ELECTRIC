@@ -9,7 +9,6 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-json`,
     `gatsby-plugin-styled-components`,
-    `gatsby-plugin-fontawesome-css`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -33,7 +32,7 @@ module.exports = {
         background_color: `#f20079`,
         theme_color: `#f20079`,
         display: `minimal-ui`,
-        icon: `static/logo.png`, // This path is relative to the root of the site.
+        icon: `static/maskable_icon.png`, // This path is relative to the root of the site.
       },
     },
     {

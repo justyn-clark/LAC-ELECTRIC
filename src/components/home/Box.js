@@ -12,7 +12,7 @@ const Box = styled.div`
   `};
 
   .top {
-    height: 290px;
+    height: 260px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -26,16 +26,41 @@ const Box = styled.div`
       background: #e4012e;
       transition: 0.3s;
     }
+    .title {
+      margin-bottom: 10px;
+      text-transform: uppercase;
+      font-size: 20px;
+      font-weight: bold;
+    }
   }
 
   .bottom {
     position: relative;
+    max-height: 225px;
     overflow: hidden;
 
     .img {
-      // width: 370px;
       height: auto;
       transition: 0.5s all ease;
+    }
+
+    .overlay {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      transition: 0.5s all ease;
+      &:hover {
+        opacity: 1;
+        background: rgba(0, 0, 0, 0.5);
+        transition: 0.5s all ease;
+        cursor: pointer;
+      }
     }
 
     &:hover {
@@ -43,33 +68,6 @@ const Box = styled.div`
         transition: 0.5s all ease;
         transform: scale(1.2);
         cursor: pointer;
-      }
-      .overlay {
-        opacity: 0;
-        position: absolute;
-        left: 0;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        transition: 0.5s all ease;
-        &:hover {
-          opacity: 1;
-          background: rgba(0, 0, 0, 0.5);
-          transition: 0.5s all ease;
-          cursor: pointer;
-        }
-        &:before {
-          content: '\f065';
-          position: absolute;
-          margin-top: -15px;
-          top: 50%;
-          left: 0;
-          right: 0;
-          font: 400 30px 'FontAwesome';
-          color: white;
-          line-height: 30px;
-          text-align: center;
-        }
       }
     }
   }

@@ -50,7 +50,11 @@ const StyledBurger = styled.button`
 
 export default ({ open, setOpen }) => {
   return (
-    <StyledBurger open={open} onClick={() => setOpen(!open)}>
+    <StyledBurger
+      aria-label="Mobile menu button"
+      open={open}
+      onClick={() => setOpen(!open)}
+    >
       <div />
       <div />
       <div />
