@@ -8,9 +8,11 @@ const Box = styled.div`
   color: #ffffff;
   overflow: hidden;
   ${respondTo.sm`   
-    margin: 0 1rem;
+    margin: 0;
+    &:nth-child(2) {
+      margin: 0 12px;
+    }
   `};
-
   .top {
     height: 260px;
     display: flex;
@@ -33,7 +35,6 @@ const Box = styled.div`
       font-weight: bold;
     }
   }
-
   .bottom {
     position: relative;
     max-height: 225px;
@@ -71,7 +72,6 @@ const Box = styled.div`
       }
     }
   }
-
   h4 {
     text-transform: uppercase;
     padding-bottom: 0.5rem;

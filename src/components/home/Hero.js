@@ -19,11 +19,14 @@ const Hero = styled.section`
     height: 450px;
   }
 
+  .awssld__content {
+    align-items: flex-end;
+  }
+
   .content {
-    position: absolute;
-    left: 50%;
+    position: relative;
     width: 90vw;
-    transform: translate(-50%, 50%);
+    padding-bottom: 5rem;
   }
 
   p {
