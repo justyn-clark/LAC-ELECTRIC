@@ -31,6 +31,9 @@ const Content = styled(PageInnerWrap)`
       align-items: center;
       width: 100%;
       margin-bottom: 3rem;
+      svg {
+        margin-bottom: 1rem;
+      }
       &.address {
         a {
           display: flex;
@@ -60,7 +63,7 @@ const Contact = () => {
               href="https://www.google.com/maps/place/7835+Noble+Ave,+Van+Nuys,+CA+91405/@34.2130952,-118.4642288,17z/data=!3m1!4b1!4m5!3m4!1s0x80c29735e4345219:0x6de4b7273310ba9d!8m2!3d34.2130952!4d-118.4620401"
               rel="noopener"
             >
-              <Icon icon={'map-marker'} size="89px" color="#1e283a" />
+              <Icon icon={'marker'} size="89px" color="#1e283a" />
               <p>{contact.address}</p>
             </a>
           </div>

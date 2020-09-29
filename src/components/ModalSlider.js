@@ -1,6 +1,7 @@
 import React, { useContext, useState, useEffect } from 'react';
 import Img from 'gatsby-image';
 import styled from 'styled-components';
+import { respondTo } from '../helper';
 import {
   GlobalStateContext,
   GlobalDispatchContext,
@@ -35,6 +36,7 @@ const BtnWrap = styled.div`
     transform: rotate(135deg);
   }
 `;
+
 const Wrap = styled.section`
   display: flex;
   align-items: center;
@@ -43,11 +45,16 @@ const Wrap = styled.section`
   width: 100%;
 
   & > * {
+    display: flex;
+    align-items: center;
     flex-grow: 1;
   }
 
   .gatsby-image-wrapper {
-    // height: 500px;
+    height: 300px;
+    ${respondTo.sm`
+      height: auto;
+    `}
   }
 
   .closeBtn {
