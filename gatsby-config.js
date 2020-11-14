@@ -2,6 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `LAC Electric`,
     description: `Independent electrical contracting firm located in the heart of San Fernando Valley, California, serving the greatest Los Angeles County and neighboring cities for over 18 years and counting.`,
+    siteUrl: 'https://www.lacelectric.com',
   },
   plugins: [
     `gatsby-transformer-sharp`,
@@ -9,6 +10,8 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-json`,
     `gatsby-plugin-styled-components`,
+    'gatsby-plugin-robots-txt',
+    'gatsby-plugin-sitemap',
     {
       resolve: `gatsby-source-filesystem`,
       options: {
