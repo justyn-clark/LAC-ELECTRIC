@@ -1,11 +1,14 @@
 import { useEffect, useState } from "react";
+import { getContent } from "../content";
 import hero2 from "../images/Buildings/ProjectPictures-48.jpg";
 import hero from "../images/Buildings/ProjectPictures-167.jpg";
 import hero3 from "../images/Buildings/ProjectPictures-208.jpg";
+import { H1 } from "./Headings";
 
 const slides = [hero, hero2, hero3];
 
 export default function Hero() {
+	const { hero: heroContent } = getContent();
 	const [index, setIndex] = useState(0);
 
 	useEffect(() => {
@@ -17,7 +20,7 @@ export default function Hero() {
 	}, []);
 
 	return (
-		<section className="relative flex h-[450px] w-full items-center justify-center overflow-hidden">
+		<section className="relative flex h-[450px] w-full items-end justify-center overflow-hidden">
 			{slides.map((src, i) => (
 				<img
 					key={src}
@@ -27,14 +30,11 @@ export default function Hero() {
 				/>
 			))}
 			<div className="absolute inset-0 bg-black/30" />
-			<div className="content relative z-10 flex w-[90vw] items-end pb-20">
+			<div className="relative z-10 w-[90vw] pb-20">
 				<div className="text-center text-white">
-					<h1 className="mb-0 text-4xl font-bold normal-case">
-						LAC Electric Inc
-					</h1>
-					<p className="mt-2 text-xl font-light normal-case">
-						Serving Los Angeles County and neighboring cities for over 18 years
-						and counting.
+					<H1 className="mb-0 text-[40px] normal-case">{heroContent.title}</H1>
+					<p className="mt-2 text-xl font-light normal-case text-center">
+						{heroContent.subtitle}
 					</p>
 				</div>
 			</div>

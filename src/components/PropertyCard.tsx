@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { getContent } from "../content";
 import type { Property } from "../data/properties";
 import { useProjectImages } from "../hooks/useProjectImages";
 
@@ -7,6 +8,7 @@ type PropertyCardProps = {
 };
 
 export default function PropertyCard({ property }: PropertyCardProps) {
+	const { projects } = getContent();
 	const allImages = useProjectImages();
 	const images =
 		(allImages[
@@ -29,8 +31,7 @@ export default function PropertyCard({ property }: PropertyCardProps) {
 	return (
 		<Link to={`/projects/${property.slug}`} className="group block">
 			<article className="h-full overflow-hidden bg-white shadow-md transition-all duration-300 hover:shadow-xl">
-				{/* Image */}
-				<div className="relative aspect-4/3 overflow-hidden bg-gradient-to-br from-gray-100 to-gray-200">
+				<div className="relative aspect-4/3 overflow-hidden bg-linear-to-br from-gray-100 to-gray-200">
 					{mainImage ? (
 						<img
 							src={mainImage}
@@ -57,26 +58,23 @@ export default function PropertyCard({ property }: PropertyCardProps) {
 							</svg>
 						</div>
 					)}
-					{/* Type Badge */}
+
 					<div className="absolute right-4 top-4 bg-[#f20079] px-3 py-1 text-xs font-semibold uppercase tracking-wide text-white shadow-lg">
 						{property.type}
 					</div>
-					{/* Featured Badge */}
+
 					{property.featured && (
 						<div className="absolute left-4 top-4 bg-yellow-400 px-3 py-1 text-xs font-bold uppercase tracking-wide text-gray-900 shadow-lg">
-							Featured
+							{projects.detail.labels.featured}
 						</div>
 					)}
 				</div>
 
-				{/* Content */}
 				<div className="p-6">
-					{/* Title */}
 					<h2 className="mb-2 text-xl font-bold text-gray-900 transition-colors group-hover:text-[#f20079]">
 						{property.title}
 					</h2>
 
-					{/* Location & Year */}
 					<div className="mb-3 flex items-center gap-3 text-sm text-gray-600">
 						<span className="flex items-center gap-1">
 							<svg
@@ -122,14 +120,12 @@ export default function PropertyCard({ property }: PropertyCardProps) {
 						</span>
 					</div>
 
-					{/* Description */}
 					<p className="mb-4 line-clamp-3 text-sm leading-relaxed text-gray-700">
 						{property.shortDescription}
 					</p>
 
-					{/* View Project Link */}
 					<div className="flex items-center gap-2 text-sm font-semibold text-[#f20079] transition-all group-hover:gap-3">
-						View Project
+						{projects.detail.cta.viewProject}
 						<svg
 							className="h-4 w-4 transition-transform group-hover:translate-x-1"
 							fill="none"

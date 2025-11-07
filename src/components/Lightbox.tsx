@@ -73,7 +73,6 @@ export default function Lightbox({
 			onKeyDown={handleBackdropKeyDown}
 		>
 			<div className="relative max-w-6xl max-h-[90vh] p-2">
-				{/* Image container with left/right click zones */}
 				{/* biome-ignore lint/a11y/useSemanticElements: Image container needs div for layout with click zones */}
 				<div
 					role="button"
@@ -100,18 +99,15 @@ export default function Lightbox({
 						draggable={false}
 					/>
 
-					{/* Visual indicator for click zones (optional, can be hidden) */}
 					{images.length > 1 && (
 						<>
-							{/* Left click zone indicator */}
 							<div className="absolute left-0 top-0 bottom-0 w-1/2 opacity-0 hover:opacity-10 bg-white transition-opacity pointer-events-none" />
-							{/* Right click zone indicator */}
+
 							<div className="absolute right-0 top-0 bottom-0 w-1/2 opacity-0 hover:opacity-10 bg-white transition-opacity pointer-events-none" />
 						</>
 					)}
 				</div>
 
-				{/* Navigation buttons (still available for accessibility) */}
 				{images.length > 1 && (
 					<>
 						<button
@@ -141,7 +137,6 @@ export default function Lightbox({
 					</>
 				)}
 
-				{/* Close button */}
 				<button
 					type="button"
 					aria-label="Close"
@@ -155,7 +150,6 @@ export default function Lightbox({
 					<span className="text-xl font-bold leading-none">✕</span>
 				</button>
 
-				{/* Image counter */}
 				{images.length > 1 && (
 					<div className="absolute bottom-4 left-1/2 -translate-x-1/2 rounded-full bg-black/50 px-4 py-2 text-white text-sm backdrop-blur z-10">
 						{currentIndex + 1} / {images.length}

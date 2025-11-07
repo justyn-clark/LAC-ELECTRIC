@@ -1,11 +1,27 @@
 {
   "title": "Home",
   "navigation": [
-    { "path": "/projects", "label": "Projects" },
-    { "path": "/services", "label": "Services" },
-    { "path": "/about", "label": "About Us" },
-    { "path": "/contact", "label": "Contact Us" }
+    {
+      "path": "/projects",
+      "label": "Projects"
+    },
+    {
+      "path": "/services",
+      "label": "Services"
+    },
+    {
+      "path": "/about",
+      "label": "About Us"
+    },
+    {
+      "path": "/contact",
+      "label": "Contact Us"
+    }
   ],
+  "hero": {
+    "title": "LAC Electric Inc",
+    "subtitle": "Serving Los Angeles County and neighboring cities for over 18 years and counting."
+  },
   "serviceTypes": [
     {
       "title": "Residential Electrician",
@@ -46,40 +62,165 @@
         "info": "Stand by generator sets, Emergency inverters, UPS systems, Troubleshooting, Service calls",
         "image": "service4.jpg"
       }
-    ]
+    ],
+    "residential": {
+      "title": "Residential Installations",
+      "items": [
+        "Ground up construction",
+        "Multifamily apartment buildings",
+        "Condominium units",
+        "Mix use buildings",
+        "New homes",
+        "Spec homes",
+        "Custom homes",
+        "Track homes",
+        "Remodeling",
+        "Service Upgrades",
+        "Rewiring",
+        "Lighting Upgrades",
+        "Service Calls",
+        "Troubleshooting",
+        "Dry Utilities (Power and Communication)",
+        "Electric Home Inspections"
+      ]
+    },
+    "commercial": {
+      "title": "Commercial Installations",
+      "items": [
+        "Tenant Improvement",
+        "New construction",
+        "Troubleshooting",
+        "EV Chargers",
+        "Remodeling",
+        "Service upgrades",
+        "Service calls",
+        "Retail Spaces",
+        "Lighting automation",
+        "Backup generator sets",
+        "Commercial Offices",
+        "Warehouses",
+        "Emergency Inverters",
+        "UPS systems",
+        "Dry Utilities ( Power & Communication)"
+      ]
+    }
   },
   "projects": {
     "title": "Recent Projects",
     "info": "Below you can see some shots from our recent projects. There are some photos from our Residential, Commercial, Industrial works",
     "cta": "View all projects",
+    "page": {
+      "title": "Projects",
+      "description": "Explore our diverse portfolio of electrical projects across Los Angeles County. From luxury residential developments to large-scale commercial installations, each project showcases our commitment to quality, safety, and innovation.",
+      "filterTitle": "Filter by Type",
+      "allProjects": "All Projects",
+      "showing": "Showing",
+      "project": "project",
+      "projects": "projects",
+      "gallery": {
+        "title": "Featured Work Gallery",
+        "description": "Explore our craftsmanship across different categories. From intricate electrical rooms to stunning architectural lighting, each image represents our commitment to excellence."
+      }
+    },
     "galleryFilter": [
-      { "name": "Buildings" },
-      { "name": "Lighting" },
-      { "name": "Electrical Rooms" },
-      { "name": "Equipment" },
-      { "name": "Details" }
+      {
+        "name": "Buildings"
+      },
+      {
+        "name": "Lighting"
+      },
+      {
+        "name": "Electrical Rooms"
+      },
+      {
+        "name": "Equipment"
+      },
+      {
+        "name": "Details"
+      }
     ],
     "nveApartments": [
-      { "src": "nve-6.jpg" },
-      { "src": "nve-10.jpg" },
-      { "src": "nve-27.jpg" },
-      { "src": "nve-40.jpg" },
-      { "src": "nve-48.jpg" }
+      {
+        "src": "nve-6.jpg"
+      },
+      {
+        "src": "nve-10.jpg"
+      },
+      {
+        "src": "nve-27.jpg"
+      },
+      {
+        "src": "nve-40.jpg"
+      },
+      {
+        "src": "nve-48.jpg"
+      }
     ],
     "imagesRecent": [
-      { "src": "nve-6.jpg" },
-      { "src": "nve-10.jpg" },
-      { "src": "nve-27.jpg" },
-      { "src": "nve-40.jpg" }
+      {
+        "src": "nve-6.jpg"
+      },
+      {
+        "src": "nve-10.jpg"
+      },
+      {
+        "src": "nve-27.jpg"
+      },
+      {
+        "src": "nve-40.jpg"
+      }
     ],
     "imagesAll": [
-      { "src": "kensignton1.JPG" },
-      { "src": "kensignton2.JPG" },
-      { "src": "newHall1.JPG" },
-      { "src": "newHall2.JPG" }
-    ]
+      {
+        "src": "kensignton1.JPG"
+      },
+      {
+        "src": "kensignton2.JPG"
+      },
+      {
+        "src": "newHall1.JPG"
+      },
+      {
+        "src": "newHall2.JPG"
+      }
+    ],
+    "detail": {
+      "notFound": {
+        "title": "Property Not Found",
+        "description": "The property you're looking for doesn't exist.",
+        "backButton": "Back to Projects"
+      },
+      "breadcrumb": {
+        "home": "Home",
+        "projects": "Projects"
+      },
+      "labels": {
+        "featured": "Featured",
+        "location": "Location",
+        "year": "Year",
+        "viewGallery": "View Gallery",
+        "noImage": "No image available",
+        "imagesComingSoon": "Project Images Coming Soon",
+        "projectOverview": "Project Overview",
+        "scopeOfWork": "Scope of Work",
+        "projectGallery": "Project Gallery",
+        "galleryComingSoon": "Gallery images coming soon for this project.",
+        "projectDetails": "Project Details",
+        "yearCompleted": "Year Completed",
+        "projectType": "Project Type",
+        "keyFeatures": "Key Features",
+        "startProject": "Start Your Project",
+        "previousProject": "Previous Project",
+        "nextProject": "Next Project",
+        "viewAllProjects": "View All Projects"
+      },
+      "cta": {
+        "viewProject": "View Project"
+      }
+    }
   },
   "about": {
+    "pageTitle": "About Us",
     "info": {
       "title": "Company Information",
       "desc": "LAC Electric Inc. Is an independent electrical contracting firm located in the heart of San Fernando Valley, California, serving the greatest Los Angeles County and neighboring cities for over 18 years and counting and more than 60 years of combined experience with expertise in commercial and residential installations on new and remodeling buildings, our staff have successfully completed a variety of projects for the private and public sector construction industry."
@@ -87,14 +228,49 @@
     "objectives": {
       "title": "Company Objectives",
       "desc": "At LAC Electric Inc. our main goal is to provide our clients with the best possible experience and customer service available whether is just  a simple installation to a complete new system, we gladly help our customers make their dreams come true in a timely manner and budget, quality, honesty, reliable and friendly are just a few qualifications we have received from our satisfied clients over the years in service."
+    },
+    "president": {
+      "name": "Francisco Larin",
+      "title": "President",
+      "company": "LAC Electric, Inc."
     }
   },
   "contact": {
+    "pageTitle": "Contact Us",
     "address": "7821 Noble Ave., Van Nuys, CA, 91405",
     "email": "info@lacelectric.com",
-    "phone": "(818) 994-9701"
+    "phone": "(818) 994-9701",
+    "careerText": "For career opportunities please download this application",
+    "careerLink": "PDF",
+    "careerTextEnd": "file, fill it and send it to our email!"
   },
-
+  "seo": {
+    "home": {
+      "title": "Home",
+      "description": "LAC Electric Inc. - Independent electrical contracting firm serving Los Angeles County and neighboring cities for over 18 years. Residential, commercial, and industrial electrical services.",
+      "keywords": "electrical contractor, Los Angeles, Van Nuys, residential electrician, commercial electrician, industrial electrician, electrical services, LAC Electric"
+    },
+    "projects": {
+      "title": "Projects",
+      "description": "View our portfolio of electrical projects including residential, commercial, and industrial installations across Los Angeles County.",
+      "keywords": "electrical projects, portfolio, Los Angeles electrical projects, residential projects, commercial projects, industrial projects, LAC Electric projects"
+    },
+    "services": {
+      "title": "Our Services",
+      "description": "LAC Electric offers comprehensive electrical services including residential installations, commercial installations, new construction, service upgrades, tenant improvements, and emergency power solutions.",
+      "keywords": "electrical services, residential electrician, commercial electrician, new construction, service upgrades, tenant improvement, emergency power, Los Angeles electrician, electrical contractor services"
+    },
+    "about": {
+      "title": "About",
+      "description": "LAC Electric Inc. Is an independent electrical contracting firm located in the heart of San Fernando Valley, California, serving the greatest Los Angeles County and neighboring cities for over 18 years and counting.",
+      "keywords": "LAC Electric, electrical contractor Los Angeles, San Fernando Valley electrician, Francisco Larin, electrical contracting firm, Los Angeles electrical services"
+    },
+    "contact": {
+      "title": "Contact Us",
+      "description": "Contact LAC Electric Inc. at 7821 Noble Ave., Van Nuys, CA 91405. Call (818) 994-9701 or email info@lacelectric.com for electrical services in Los Angeles County.",
+      "keywords": "contact LAC Electric, Van Nuys electrician, Los Angeles electrical contractor contact, electrical services phone number, LAC Electric address"
+    }
+  },
   "reviews": [
     {
       "id": "xYiMGdXsuj_P-gkETYR99A",

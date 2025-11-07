@@ -23,10 +23,8 @@ export default function SEO({ title, description, keywords, image }: SEOProps) {
 	const metaImage = image || `${siteMetadata.siteUrl}/logo.png`;
 
 	useEffect(() => {
-		// Update document title
 		document.title = metaTitle;
 
-		// Update or create meta tags
 		const updateMetaTag = (
 			name: string,
 			content: string,
@@ -41,7 +39,6 @@ export default function SEO({ title, description, keywords, image }: SEOProps) {
 			element.setAttribute("content", content);
 		};
 
-		// Primary Meta Tags
 		updateMetaTag("title", metaTitle);
 		updateMetaTag("description", metaDescription);
 
@@ -49,21 +46,18 @@ export default function SEO({ title, description, keywords, image }: SEOProps) {
 			updateMetaTag("keywords", keywords);
 		}
 
-		// Open Graph / Facebook
 		updateMetaTag("og:type", "website", "property");
 		updateMetaTag("og:url", metaUrl, "property");
 		updateMetaTag("og:title", metaTitle, "property");
 		updateMetaTag("og:description", metaDescription, "property");
 		updateMetaTag("og:image", metaImage, "property");
 
-		// Twitter
 		updateMetaTag("twitter:card", "summary_large_image");
 		updateMetaTag("twitter:url", metaUrl);
 		updateMetaTag("twitter:title", metaTitle);
 		updateMetaTag("twitter:description", metaDescription);
 		updateMetaTag("twitter:image", metaImage);
 
-		// Canonical URL
 		let canonical = document.querySelector('link[rel="canonical"]');
 		if (!canonical) {
 			canonical = document.createElement("link");

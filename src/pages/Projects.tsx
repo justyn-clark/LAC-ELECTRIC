@@ -1,13 +1,16 @@
 import { useState } from "react";
 import Gallery from "../components/Gallery";
+import { H1, H2 } from "../components/Headings";
 import HR from "../components/HR";
 import Lightbox from "../components/Lightbox";
 import PageInnerWrap from "../components/PageInnerWrap";
 import PropertyCard from "../components/PropertyCard";
 import SEO from "../components/SEO";
+import { getContent } from "../content";
 import { getAllProperties, getPropertyTypes } from "../data/properties";
 
 export default function Projects() {
+	const { projects: projectsContent } = getContent();
 	const properties = getAllProperties();
 	const propertyTypes = getPropertyTypes();
 	const [selectedType, setSelectedType] = useState<string>("All");
@@ -47,29 +50,20 @@ export default function Projects() {
 	return (
 		<>
 			<SEO
-				title="Projects"
-				description="View our portfolio of electrical projects including residential, commercial, and industrial installations across Los Angeles County."
+				title={projectsContent.page.title}
+				description={projectsContent.page.description}
 				keywords="electrical projects, portfolio, Los Angeles electrical projects, residential projects, commercial projects, industrial projects, LAC Electric projects"
 			/>
 			<PageInnerWrap className="flex flex-col py-4 pb-16">
-				{/* Page Header */}
 				<div className="mb-8">
-					<h1 className="mb-4 text-4xl font-bold md:text-5xl">Our Projects</h1>
-					<p className="text-lg text-gray-600">
-						Explore our diverse portfolio of electrical projects across Los
-						Angeles County. From luxury residential developments to large-scale
-						commercial installations, each project showcases our commitment to
-						quality, safety, and innovation.
+					<H1>{projectsContent.page.title}</H1>
+					<HR />
+					<p className="text-lg text-gray-600 max-w-4xl mx-auto text-center pt-4">
+						{projectsContent.page.description}
 					</p>
 				</div>
-
-				<HR />
-
-				{/* Filter Section */}
 				<div className="my-8">
-					<h2 className="mb-4 text-xl font-semibold text-gray-900">
-						Filter by Type
-					</h2>
+					<H2 className="text-left pb-3">{projectsContent.page.filterTitle}</H2>
 					<div className="flex flex-wrap gap-3">
 						<button
 							type="button"
@@ -80,7 +74,7 @@ export default function Projects() {
 									: "bg-gray-100 text-gray-700 hover:bg-gray-200"
 							}`}
 						>
-							All Projects ({properties.length})
+							{projectsContent.page.allProjects} ({properties.length})
 						</button>
 						{propertyTypes.map((type) => {
 							const count = properties.filter((p) => p.type === type).length;
@@ -102,17 +96,18 @@ export default function Projects() {
 					</div>
 				</div>
 
-				{/* Property Cards Grid */}
 				<section className="mb-16">
 					<div className="mb-6 flex items-center justify-between">
-						<h2 className="text-2xl font-bold text-gray-900">
+						<H2 className="text-gray-900 normal-case">
 							{selectedType === "All"
-								? "All Projects"
-								: `${selectedType} Projects`}
-						</h2>
+								? projectsContent.page.allProjects
+								: `${selectedType} ${projectsContent.page.projects}`}
+						</H2>
 						<span className="text-sm text-gray-600">
-							Showing {filteredProperties.length}{" "}
-							{filteredProperties.length === 1 ? "project" : "projects"}
+							{projectsContent.page.showing} {filteredProperties.length}{" "}
+							{filteredProperties.length === 1
+								? projectsContent.page.project
+								: projectsContent.page.projects}
 						</span>
 					</div>
 					<div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
@@ -122,16 +117,13 @@ export default function Projects() {
 					</div>
 				</section>
 
-				{/* Featured Work Gallery Section */}
 				<section className="mt-20 rounded-2xl bg-linear-to-br from-gray-50 to-gray-100 p-8 shadow-inner md:p-12">
 					<div className="mb-8 text-center">
-						<h2 className="mb-4 text-3xl font-bold text-gray-900 md:text-4xl">
-							Featured Work Gallery
-						</h2>
+						<H2 className="mb-4 text-3xl text-gray-900 md:text-4xl normal-case">
+							{projectsContent.page.gallery.title}
+						</H2>
 						<p className="mx-auto max-w-2xl text-lg text-gray-600">
-							Explore our craftsmanship across different categories. From
-							intricate electrical rooms to stunning architectural lighting,
-							each image represents our commitment to excellence.
+							{projectsContent.page.gallery.description}
 						</p>
 					</div>
 					<div className="rounded-xl bg-white p-6 shadow-md md:p-8">

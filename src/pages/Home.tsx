@@ -4,14 +4,16 @@ import RecentProjects from "../components/RecentProjects";
 import Reviews from "../components/Reviews";
 import SEO from "../components/SEO";
 import ServicesGrid from "../components/ServicesGrid";
+import { getContent } from "../content";
 
 export default function Home() {
+	const { seo } = getContent();
 	return (
 		<>
 			<SEO
-				title="Home"
-				description="LAC Electric Inc. - Independent electrical contracting firm serving Los Angeles County and neighboring cities for over 18 years. Residential, commercial, and industrial electrical services."
-				keywords="electrical contractor, Los Angeles, Van Nuys, residential electrician, commercial electrician, industrial electrician, electrical services, LAC Electric"
+				title={seo.home.title}
+				description={seo.home.description}
+				keywords={seo.home.keywords}
 			/>
 			<div className="flex flex-col">
 				<Hero />

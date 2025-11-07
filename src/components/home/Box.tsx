@@ -7,7 +7,7 @@ type BoxProps = {
 
 export default function Box({ children }: BoxProps) {
 	return (
-		<div className="relative mx-0 mb-8 flex-1 overflow-hidden text-white sm:mx-0 sm:mb-0 [&:nth-child(2)]:sm:mx-3">
+		<div className="relative mx-0 mb-8 flex-1 overflow-hidden text-white sm:mx-0 sm:mb-0 nth-2:sm:mx-3">
 			{children}
 		</div>
 	);

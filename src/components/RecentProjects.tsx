@@ -4,6 +4,7 @@ import nve6 from "../images/NveApartments/nve-6.jpg";
 import nve10 from "../images/NveApartments/nve-10.jpg";
 import nve27 from "../images/NveApartments/nve-27.jpg";
 import nve40 from "../images/NveApartments/nve-40.jpg";
+import { H2 } from "./Headings";
 import HR from "./HR";
 import InnerWrap from "./InnerWrap";
 
@@ -14,7 +15,7 @@ export default function RecentProjects() {
 	return (
 		<section className="flex w-full flex-col bg-[#e1e2e4] py-12">
 			<InnerWrap>
-				<h2>{projects.title.toUpperCase()}</h2>
+				<H2>{projects.title.toUpperCase()}</H2>
 				<HR />
 				<p className="text-center">{projects.info}</p>
 				<div className="images relative flex flex-col gap-4 pt-8 sm:flex-row">
