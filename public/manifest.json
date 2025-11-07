@@ -1,0 +1,16 @@
+{
+	"name": "LAC Electric",
+	"short_name": "LAC Electric",
+	"start_url": "/",
+	"display": "minimal-ui",
+	"background_color": "#f20079",
+	"theme_color": "#f20079",
+	"icons": [
+		{
+			"src": "/maskable_icon.png",
+			"sizes": "512x512",
+			"type": "image/png",
+			"purpose": "any maskable"
+		}
+	]
+}

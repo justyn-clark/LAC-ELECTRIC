@@ -1,36 +1,77 @@
-## LAC Electric Website
+# LAC Electric Website
 
-Welcome to the GitHub repository for the LAC Electric website! This repository contains the source code and assets for the LAC Electric website, built using Gatsby and styled with Styled Components. The website showcases the companies' electric services and offerings.
+This repository contains **two versions** of the LAC Electric website:
 
-### Features
+## Repository Structure
 
-- **Responsive Design**: The website is designed to work seamlessly across various devices and screen sizes.
-- **FontAwesome Icons**: We utilize FontAwesome icons for visually appealing and informative elements.
-- **Google Fonts Integration**: The website incorporates Google Fonts to enhance typography.
-- **SEO Optimization**: We have implemented SEO best practices using Gatsby's plugins for improved visibility on search engines.
-- **Offline Support**: Thanks to Gatsby's offline plugin, users can access the website even when offline.
-- **Styled Components**: The styling is managed using Styled Components for a modular and maintainable approach.
-- **Linting and Formatting**: We use ESLint, Stylelint, and Prettier to maintain consistent code quality and style.
-- **Test Preparation**: The project comes with a test script to guide you in setting up unit testing.
+### Branch: `v2` (Production - Legacy)
 
-### Tech Stack
+- **Technology**: Gatsby + Styled Components
+- **Status**: Current production build (legacy)
+- **Location**: Root directory (`src/`, `gatsby-*.js`, etc.)
+- **Deployment**: Manual (no auto-deploy on push)
+
+### Branch: `production-vite` (Production - New)
+
+- **Technology**: Vite + React + TypeScript + Tailwind CSS
+- **Status**: New production-ready version
+- **Location**: Root directory (all files at root level)
+- **Deployment**: Manual (no auto-deploy on push)
+- **Note**: This branch is the default branch on GitHub
+
+## Development Workflow
+
+### Working on the Legacy Site (Gatsby)
+
+```bash
+git checkout v2
+npm install
+npm run develop
+```
+
+### Working on the New Site (Vite)
+
+```bash
+git checkout production-vite
+npm install
+npm run dev
+```
+
+## Branch Strategy
+
+- **`v2`**: Legacy Gatsby production site (current production, preserved as-is)
+- **`production-vite`**: New Vite-based production site (default branch)
+- Both versions coexist independently in separate branches
+- No automatic deployments on push
+
+## Tech Stacks
+
+### Legacy (Gatsby) - `v2` branch
 
 - Gatsby
 - React
 - Styled Components
 - FontAwesome Icons
-- Google Fonts
 - ESLint, Stylelint, Prettier
 
-### Installation and Usage
+### New (Vite) - `production-vite` branch
 
-1. Clone this repository to your local machine.
-2. Run `npm install` to install the project dependencies.
-3. Use `npm run develop` to start the development server.
-4. Access the website at `http://localhost:8000`.
+- Vite
+- React 19
+- TypeScript
+- Tailwind CSS
+- Biome (linting & formatting)
+- React Router v7
 
-*For more information about Gatsby, visit [gatsbyjs.org](https://gatsbyjs.org).*
+## Quick Start (Vite Version)
+
+```bash
+npm install
+npm run dev
+```
+
+Visit `http://localhost:5173` to see the site.
 
 ---
 
-*This project is maintained by the LAC Electric team. © 2023 LAC Electric.*
+*This project is maintained by the LAC Electric team. © 2025 LAC Electric.*

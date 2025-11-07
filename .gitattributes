@@ -1,0 +1,39 @@
+# Prevent accidental merges between legacy and new site branches
+# These branches should remain separate
+
+# Legacy Gatsby site files (should only exist on v2)
+gatsby-*.js linguist-generated=false
+static/** linguist-generated=false
+
+# New Vite site files (should only exist on production-vite)
+# Vite files are at root level on production-vite branch
+vite.config.js linguist-generated=false
+vite-plugin-static-routes.js linguist-generated=false
+tsconfig.json linguist-generated=false
+
+# Auto detect text files and perform line ending normalization
+* text=auto
+
+# Explicitly declare text files
+*.js text eol=lf
+*.jsx text eol=lf
+*.ts text eol=lf
+*.tsx text eol=lf
+*.json text eol=lf
+*.md text eol=lf
+*.css text eol=lf
+*.html text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+
+# Denote files that are binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.pdf binary
+*.ttf binary
+*.woff binary
+*.woff2 binary
+
