@@ -14,17 +14,19 @@ export default function Footer() {
 				/>
 				<div className="address mb-12 flex flex-col items-center leading-loose sm:mb-0 sm:self-end">
 					<h3 className="mb-2 text-lg font-semibold uppercase">CONTACT</h3>
-					<a
-						href="https://www.google.com/maps/place/7835+Noble+Ave,+Van+Nuys,+CA+91405/"
-						target="_blank"
-						rel="noopener"
-						className="text-white no-underline"
-						aria-label={contact.address}
-					>
-						{contact.address}
-					</a>
-					<p className="mb-0">{contact.email}</p>
-					<p className="mb-0">{contact.phone}</p>
+					<div className="flex flex-col items-center space-y-2">
+						<a
+							href="https://www.google.com/maps/place/7835+Noble+Ave,+Van+Nuys,+CA+91405/"
+							target="_blank"
+							rel="noopener"
+							className="text-white no-underline"
+							aria-label={contact.address}
+						>
+							{contact.address}
+						</a>
+						<p className="mb-0">{contact.email}</p>
+						<p className="mb-0">{contact.phone}</p>
+					</div>
 				</div>
 				<div className="right flex flex-col items-center gap-4 sm:self-end">
 					<div className="social flex gap-2">

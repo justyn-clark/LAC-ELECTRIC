@@ -17,7 +17,7 @@ export default function ServiceTypes() {
 	return (
 		<section className="bg-[#e1e2e4] py-12">
 			<InnerWrap>
-				<div className="flex flex-col items-center sm:flex-row sm:justify-between">
+				<div className="flex flex-col items-stretch gap-4 sm:flex-row sm:justify-between sm:gap-2 md:gap-4">
 					{serviceTypes.map((item) => {
 						const imagePath = serviceImages[item.image] || "";
 						return (

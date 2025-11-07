@@ -4,8 +4,8 @@ import Icon from "./Icon";
 export default function TopBar() {
 	const { contact } = getContent();
 	return (
-		<header className="hidden flex-col items-center justify-between bg-[#1e283a] px-4 py-2 text-white sm:flex sm:h-[50px] sm:flex-row sm:px-7 md:px-20">
-			<div className="social flex items-center flex-1 gap-3">
+		<header className="hidden flex-col items-center justify-between bg-[#1e283a] px-4 py-2 text-white sm:flex sm:h-auto sm:min-h-[50px] sm:flex-row sm:items-center sm:justify-between sm:gap-4 sm:px-6 md:px-12 lg:px-20">
+			<div className="social flex items-center gap-2 shrink-0 sm:gap-3">
 				<a
 					href="https://www.instagram.com/Lacelectric"
 					target="_blank"
@@ -39,24 +39,24 @@ export default function TopBar() {
 					<Icon icon="yelp" />
 				</a>
 			</div>
-			<div className="contactInfo flex items-center justify-center gap-4">
+			<div className="contactInfo flex items-center flex-wrap justify-center gap-2 shrink-0 sm:gap-3 md:gap-4">
 				<a
-					className="flex items-center justify-center"
+					className="flex items-center shrink-0 whitespace-nowrap"
 					rel="noopener"
 					aria-label={contact.address}
 					target="_blank"
 					href="https://www.google.com/maps/place/7835+Noble+Ave,+Van+Nuys,+CA+91405/@34.2130952,-118.4642288,17z/data=!3m1!4b1!4m5!3m4!1s0x80c29735e4345219:0x6de4b7273310ba9d!8m2!3d34.2130952!4d-118.4620401"
 				>
 					<Icon icon={"marker"} padding="0 0.5rem 0 0" />
-					{contact.address}
+					<span className="whitespace-nowrap">{contact.address}</span>
 				</a>
-				<p className="flex items-center justify-center">
+				<p className="flex items-center shrink-0 whitespace-nowrap">
 					<Icon icon={"envelope"} padding="0 0.5rem 0 0" />
-					{contact.email}
+					<span className="whitespace-nowrap">{contact.email}</span>
 				</p>
-				<p className="flex items-center justify-center">
+				<p className="flex items-center shrink-0 whitespace-nowrap">
 					<Icon icon={"phone"} padding="0 0.5rem 0 0" />
-					{contact.phone}
+					<span className="whitespace-nowrap">{contact.phone}</span>
 				</p>
 			</div>
 		</header>

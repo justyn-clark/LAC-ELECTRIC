@@ -15,7 +15,7 @@ export default function About() {
 			/>
 			<PageInnerWrap className="mx-auto w-[80vw] py-4 pb-16">
 				<H1>{about.pageTitle}</H1>
-				<HR />
+				<HR className="mb-10" />
 				<H3 className="font-bold mb-4 text-lg">{about.info.title}</H3>
 				<p className="mb-6">{about.info.desc}</p>
 				<H3 className="font-bold mb-4 text-lg">{about.objectives.title}</H3>

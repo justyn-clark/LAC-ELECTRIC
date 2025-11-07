@@ -15,10 +15,10 @@ export default function Services() {
 			/>
 			<PageInnerWrap className="flex flex-col py-4 pb-16">
 				<H1>{services.title}</H1>
-				<HR />
+				<HR className="mb-10" />
 				<div className="list flex flex-col justify-evenly gap-8 sm:flex-row">
 					<div className="list__left mb-8 sm:mb-0">
-						<H3 className="mb-4 text-lg text-[#1e283a]">
+						<H3 className="font-bold mb-4 text-lg text-[#1e283a]">
 							{services.residential.title}
 						</H3>
 						<ul className="list-disc pl-[17px] leading-[28px]">
@@ -30,7 +30,7 @@ export default function Services() {
 						</ul>
 					</div>
 					<div className="list__right mb-8 sm:mb-0">
-						<H3 className="mb-4 text-lg text-[#1e283a]">
+						<H3 className="font-bold mb-4 text-lg text-[#1e283a]">
 							{services.commercial.title}
 						</H3>
 						<ul className="list-disc pl-[17px] leading-[28px]">

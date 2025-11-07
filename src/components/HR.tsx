@@ -1,14 +1,16 @@
-export default function HR() {
+import { classNames } from "../utils/classnames";
+
+type HRProps = {
+	className?: string;
+};
+
+export default function HR({ className = "" }: HRProps) {
 	return (
 		<hr
-			style={{
-				width: "90px",
-				height: "1px",
-				margin: "0 auto 1.3rem",
-				background: "#1e283a",
-				border: "none",
-				color: "#1e283a",
-			}}
+			className={classNames(
+				"w-[90px] h-px mx-auto mb-[1.3rem] bg-[#1e283a] border-none",
+				className,
+			)}
 		/>
 	);
 }
