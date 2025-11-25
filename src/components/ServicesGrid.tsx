@@ -20,7 +20,7 @@ export default function ServicesGrid() {
 		<section className="relative w-full bg-white py-12">
 			<InnerWrap>
 				<H2>{services.title.toUpperCase()}</H2>
-				<HR />
+				<HR className="mb-12" />
 				<div className="flex flex-col justify-between sm:flex-row">
 					{services.items.map((item) => {
 						const imagePath = serviceImages[item.image] || "";

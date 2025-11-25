@@ -220,7 +220,7 @@ export default function PropertyDetail() {
 				<div className="grid gap-12 lg:grid-cols-3">
 					<div className="lg:col-span-2">
 						<section className="mb-12">
-							<H2 className="mb-4 text-gray-900 normal-case">
+							<H2 className="mb-4 text-gray-900 normal-case text-3xl">
 								{projects.detail.labels.projectOverview}
 							</H2>
 							<p className="leading-relaxed text-gray-700">
@@ -229,7 +229,7 @@ export default function PropertyDetail() {
 						</section>
 
 						<section className="mb-12">
-							<H2 className="mb-4 text-gray-900 normal-case">
+							<H2 className="mb-4 text-gray-900 normal-case text-3xl">
 								{projects.detail.labels.scopeOfWork}
 							</H2>
 							<ul className="grid gap-3 sm:grid-cols-2">
@@ -255,7 +255,7 @@ export default function PropertyDetail() {
 						</section>
 
 						<section>
-							<H2 className="mb-6 text-gray-900 normal-case">
+							<H2 className="mb-6 text-gray-900 normal-case text-3xl">
 								{projects.detail.labels.projectGallery}
 							</H2>
 							{images.length > 0 ? (

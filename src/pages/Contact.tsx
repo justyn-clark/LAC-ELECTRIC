@@ -16,7 +16,7 @@ export default function Contact() {
 				description={seo.contact.description}
 				keywords={seo.contact.keywords}
 			/>
-			<PageInnerWrap className="py-4 pb-16 text-center">
+			<PageInnerWrap className="py-4 text-center">
 				<H1>{contact.pageTitle}</H1>
 				<HR />
 				<div className="wrap flex flex-col justify-evenly gap-12 py-16 sm:flex-row">
@@ -40,7 +40,7 @@ export default function Contact() {
 						<p className="mt-4">{contact.phone}</p>
 					</div>
 				</div>
-				<p>
+				<p className="mb-0">
 					{contact.careerText}{" "}
 					<a
 						rel="noopener"

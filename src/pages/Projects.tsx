@@ -63,7 +63,9 @@ export default function Projects() {
 					</p>
 				</div>
 				<div className="my-8">
-					<H2 className="text-left pb-3">{projectsContent.page.filterTitle}</H2>
+					<H2 className="text-left pb-3 text-xl">
+						{projectsContent.page.filterTitle}
+					</H2>
 					<div className="flex flex-wrap gap-3">
 						<button
 							type="button"
@@ -98,7 +100,7 @@ export default function Projects() {
 
 				<section className="mb-16">
 					<div className="mb-6 flex items-center justify-between">
-						<H2 className="text-gray-900 normal-case">
+						<H2 className="text-gray-900 normal-case text-xl">
 							{selectedType === "All"
 								? projectsContent.page.allProjects
 								: `${selectedType} ${projectsContent.page.projects}`}

@@ -15,7 +15,7 @@ export default function Services() {
 			/>
 			<PageInnerWrap className="flex flex-col py-4 pb-16">
 				<H1>{services.title}</H1>
-				<HR className="mb-10" />
+				<HR className="mb-12" />
 				<div className="list flex flex-col justify-evenly gap-8 sm:flex-row">
 					<div className="list__left mb-8 sm:mb-0">
 						<H3 className="font-bold mb-4 text-lg text-[#1e283a]">

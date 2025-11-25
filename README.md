@@ -71,7 +71,3 @@ npm run dev
 ```
 
 Visit `http://localhost:5173` to see the site.
-
----
-
-*This project is maintained by the LAC Electric team. © 2025 LAC Electric.*

@@ -21,7 +21,9 @@ type BoxTopProps = {
 export function BoxTop({ title, info }: BoxTopProps) {
 	return (
 		<div className="top flex min-h-[240px] flex-1 flex-col items-center justify-center bg-[#1e283a] p-6 text-center transition-colors hover:bg-[#e4012e] sm:min-h-[260px] sm:p-8">
-			<p className="title mb-2.5 text-lg font-bold uppercase sm:text-xl">{title}</p>
+			<p className="title mb-2.5 text-lg font-bold uppercase sm:text-xl">
+				{title}
+			</p>
 			<p className="text-xs font-light leading-relaxed sm:text-sm sm:leading-[22px]">
 				{info}
 			</p>

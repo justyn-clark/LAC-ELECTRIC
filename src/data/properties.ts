@@ -21,7 +21,7 @@ export const properties: Property[] = [
 		title: "Kensington Campus",
 		location: "Los Angeles, CA",
 		type: "Commercial",
-		year: "2023",
+		year: "2019",
 		shortDescription:
 			"Complete electrical infrastructure for modern campus facility with advanced lighting control systems.",
 		fullDescription:
@@ -42,7 +42,7 @@ export const properties: Property[] = [
 		],
 		imageFolder: "KensingtonCampus",
 		featured: true,
-		order: 1,
+		order: 11,
 	},
 	{
 		id: "2",
@@ -50,7 +50,7 @@ export const properties: Property[] = [
 		title: "Balboa Condos",
 		location: "Los Angeles, CA",
 		type: "Residential",
-		year: "2023",
+		year: "2017",
 		shortDescription:
 			"Luxury condominium electrical systems with smart home integration and energy-efficient solutions.",
 		fullDescription:
@@ -72,7 +72,7 @@ export const properties: Property[] = [
 		],
 		imageFolder: "BalboaApartments",
 		featured: true,
-		order: 2,
+		order: 14,
 	},
 	{
 		id: "3",
@@ -80,7 +80,7 @@ export const properties: Property[] = [
 		title: "The Otsego",
 		location: "Los Angeles, CA",
 		type: "Residential",
-		year: "2022",
+		year: "2016",
 		shortDescription:
 			"Modern apartment complex with sustainable electrical solutions and contemporary amenities.",
 		fullDescription:
@@ -101,7 +101,7 @@ export const properties: Property[] = [
 		],
 		imageFolder: "TheOtsego",
 		featured: false,
-		order: 3,
+		order: 16,
 	},
 	{
 		id: "4",
@@ -130,7 +130,24 @@ export const properties: Property[] = [
 		],
 		imageFolder: "Vaughn",
 		featured: false,
-		order: 4,
+		order: 8,
+	},
+	{
+		id: "17",
+		slug: "aspire-mixed-use",
+		title: "Aspire Mixed Use Building",
+		location: "Los Angeles, CA",
+		type: "Mixed-Use",
+		year: "2021",
+		shortDescription:
+			"[PLACEHOLDER] Mixed-use building completed in spring 2021. Details to be confirmed with client.",
+		fullDescription:
+			"[PLACEHOLDER] This project entry is a placeholder for the Aspire mixed use building completed in the spring of 2021. Project details, scope, and features will be updated after confirmation with the client.",
+		scope: ["[PLACEHOLDER] Project details to be confirmed"],
+		features: ["[PLACEHOLDER] Project features to be confirmed"],
+		imageFolder: "",
+		featured: false,
+		order: 9,
 	},
 	{
 		id: "5",
@@ -138,7 +155,7 @@ export const properties: Property[] = [
 		title: "Nve Apartments",
 		location: "Los Angeles, CA",
 		type: "Residential",
-		year: "2022",
+		year: "2018",
 		shortDescription:
 			"Contemporary apartment community with complete electrical infrastructure and modern amenities.",
 		fullDescription:
@@ -160,7 +177,7 @@ export const properties: Property[] = [
 		],
 		imageFolder: "NveApartments",
 		featured: true,
-		order: 5,
+		order: 15,
 	},
 	{
 		id: "6",
@@ -168,7 +185,7 @@ export const properties: Property[] = [
 		title: "Urbanpolitian",
 		location: "Los Angeles, CA",
 		type: "Mixed-Use",
-		year: "2021",
+		year: "2015",
 		shortDescription:
 			"Mixed-use development with residential and commercial electrical systems integrated seamlessly.",
 		fullDescription:
@@ -189,7 +206,7 @@ export const properties: Property[] = [
 		],
 		imageFolder: "Urbanpolitian",
 		featured: false,
-		order: 6,
+		order: 17,
 	},
 	{
 		id: "7",
@@ -197,7 +214,7 @@ export const properties: Property[] = [
 		title: "Newhall Crossing",
 		location: "Valencia, CA",
 		type: "Commercial",
-		year: "2021",
+		year: "2018",
 		shortDescription:
 			"Retail and commercial complex with comprehensive electrical systems and exterior lighting design.",
 		fullDescription:
@@ -219,7 +236,7 @@ export const properties: Property[] = [
 		],
 		imageFolder: "NewhallCrossing",
 		featured: false,
-		order: 7,
+		order: 12,
 	},
 	{
 		id: "8",
@@ -227,7 +244,7 @@ export const properties: Property[] = [
 		title: "1180 S. La Brea",
 		location: "Los Angeles, CA",
 		type: "Residential",
-		year: "2024",
+		year: "2023",
 		shortDescription:
 			"Modern residential development with state-of-the-art electrical systems and smart building features.",
 		fullDescription:
@@ -249,7 +266,7 @@ export const properties: Property[] = [
 		],
 		imageFolder: "1180_S_Labrea",
 		featured: true,
-		order: 8,
+		order: 7,
 	},
 	{
 		id: "9",
@@ -279,7 +296,7 @@ export const properties: Property[] = [
 		],
 		imageFolder: "1450_Washington",
 		featured: true,
-		order: 9,
+		order: 6,
 	},
 	{
 		id: "10",
@@ -287,7 +304,7 @@ export const properties: Property[] = [
 		title: "4000 MontClair",
 		location: "Los Angeles, CA",
 		type: "Residential",
-		year: "2024",
+		year: "2025",
 		shortDescription:
 			"Luxury residential complex with premium electrical systems and advanced home automation.",
 		fullDescription:
@@ -309,7 +326,7 @@ export const properties: Property[] = [
 		],
 		imageFolder: "4000_MontClair",
 		featured: true,
-		order: 10,
+		order: 4,
 	},
 	{
 		id: "11",
@@ -339,7 +356,7 @@ export const properties: Property[] = [
 		],
 		imageFolder: "Alvarado",
 		featured: false,
-		order: 11,
+		order: 5,
 	},
 	{
 		id: "12",
@@ -347,7 +364,7 @@ export const properties: Property[] = [
 		title: "Bermuda Apartments",
 		location: "Los Angeles, CA",
 		type: "Residential",
-		year: "2024",
+		year: "2025",
 		shortDescription:
 			"Large-scale apartment community with comprehensive electrical infrastructure and smart systems.",
 		fullDescription:
@@ -370,7 +387,7 @@ export const properties: Property[] = [
 		],
 		imageFolder: "Bermuda",
 		featured: true,
-		order: 12,
+		order: 3,
 	},
 	{
 		id: "13",
@@ -378,7 +395,7 @@ export const properties: Property[] = [
 		title: "Draco Apartments",
 		location: "Los Angeles, CA",
 		type: "Residential",
-		year: "2024",
+		year: "2020",
 		shortDescription:
 			"Contemporary apartment building with modern electrical systems and energy-efficient solutions.",
 		fullDescription:
@@ -408,7 +425,7 @@ export const properties: Property[] = [
 		title: "Fedora x Tribly",
 		location: "Los Angeles, CA",
 		type: "Mixed-Use",
-		year: "2024",
+		year: "2022",
 		shortDescription:
 			"Innovative mixed-use project combining residential living with commercial spaces and modern electrical infrastructure.",
 		fullDescription:
@@ -430,7 +447,7 @@ export const properties: Property[] = [
 		],
 		imageFolder: "Fedora_x_Tribly",
 		featured: false,
-		order: 14,
+		order: 10,
 	},
 	{
 		id: "15",
@@ -438,7 +455,7 @@ export const properties: Property[] = [
 		title: "Ten(310)",
 		location: "Los Angeles, CA",
 		type: "Residential",
-		year: "2024",
+		year: "2025",
 		shortDescription:
 			"Boutique residential building with premium electrical systems and sophisticated lighting design.",
 		fullDescription:
@@ -459,7 +476,7 @@ export const properties: Property[] = [
 		],
 		imageFolder: "Ten310",
 		featured: false,
-		order: 15,
+		order: 2,
 	},
 	{
 		id: "16",
@@ -467,7 +484,7 @@ export const properties: Property[] = [
 		title: "WM Apartments",
 		location: "Los Angeles, CA",
 		type: "Residential",
-		year: "2024",
+		year: "2025",
 		shortDescription:
 			"Modern apartment community with complete electrical systems and contemporary amenities.",
 		fullDescription:
@@ -489,7 +506,7 @@ export const properties: Property[] = [
 		],
 		imageFolder: "WM_apartments",
 		featured: false,
-		order: 16,
+		order: 1,
 	},
 ];
 

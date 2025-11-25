@@ -4,7 +4,7 @@
 	"version": "0.0.0",
 	"type": "module",
 	"scripts": {
-		"dev": "vite",
+		"dev": "vite --host",
 		"build": "vite build && npm run optimize:images && npm run generate:sitemap",
 		"optimize:images": "node scripts/optimize-images.mjs",
 		"generate:sitemap": "node scripts/generate-sitemap.mjs",

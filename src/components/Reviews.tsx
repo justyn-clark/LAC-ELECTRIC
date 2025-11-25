@@ -1,4 +1,5 @@
 import { getContent } from "../content";
+import { H2 } from "./Headings";
 import HR from "./HR";
 import Icon from "./Icon";
 import InnerWrap from "./InnerWrap";
@@ -8,9 +9,9 @@ export default function Reviews() {
 	return (
 		<section className="relative w-full bg-white py-12">
 			<InnerWrap>
-				<h2>REVIEWS</h2>
-				<HR />
-				<div className="mx-auto mt-12 w-[80vw] text-left">
+				<H2>REVIEWS</H2>
+				<HR className="mb-12" />
+				<div className="mx-auto w-[80vw] text-left">
 					{reviews.map((item) => (
 						<div
 							key={item.id}

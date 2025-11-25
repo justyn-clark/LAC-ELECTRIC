@@ -1,4 +1,5 @@
 import type { ReactNode } from "react";
+import { classNames } from "../utils/classnames";
 
 type HeadingProps = {
 	children: ReactNode;
@@ -16,8 +17,15 @@ export function H1({ children, className = "" }: HeadingProps) {
 }
 
 export function H2({ children, className = "" }: HeadingProps) {
+	const hasTextSize = className && /\btext-/.test(className);
 	return (
-		<h2 className={`text-2xl font-bold text-center uppercase m-0 ${className}`}>
+		<h2
+			className={classNames(
+				"font-bold text-center uppercase m-0",
+				!hasTextSize && "text-4xl",
+				className,
+			)}
+		>
 			{children}
 		</h2>
 	);

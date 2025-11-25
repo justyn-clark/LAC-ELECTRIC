@@ -31,10 +31,10 @@ export default function App() {
 	return (
 		<BrowserRouter>
 			<ScrollToTop />
-			<div className="min-h-screen bg-white text-slate-900">
+			<div className="flex min-h-screen flex-col bg-white text-slate-900">
 				<TopBar />
 				<Header />
-				<main>
+				<main className="flex-1">
 					<RoutesView />
 				</main>
 				<Footer />

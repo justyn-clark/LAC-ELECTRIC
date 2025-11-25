@@ -5,7 +5,7 @@ import InnerWrap from "./InnerWrap";
 export default function Footer() {
 	const { contact } = getContent();
 	return (
-		<footer className="m-0 bg-[#1e283a] py-12">
+		<footer className="mt-0 bg-[#1e283a] py-12">
 			<InnerWrap className="mx-auto flex flex-col items-center justify-between text-center text-white sm:flex-row sm:items-end">
 				<img
 					src="/logo.png"
