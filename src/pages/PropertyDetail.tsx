@@ -8,12 +8,14 @@ import SEO from "../components/SEO";
 import { getContent } from "../content";
 import { getAllProperties, getPropertyBySlug } from "../data/properties";
 import { useProjectImages } from "../hooks/useProjectImages";
+import { useProjectVideos } from "../hooks/useProjectVideos";
 
 export default function PropertyDetail() {
 	const { slug } = useParams<{ slug: string }>();
 	const { projects } = getContent();
 	const property = slug ? getPropertyBySlug(slug) : undefined;
 	const allImages = useProjectImages();
+	const allVideos = useProjectVideos();
 	const navigate = useNavigate();
 
 	const [lightboxImages, setLightboxImages] = useState<string[] | null>(null);
@@ -42,6 +44,12 @@ export default function PropertyDetail() {
 		(allImages[
 			property.imageFolder as keyof ReturnType<typeof useProjectImages>
 		] as string[]) || [];
+
+	const videos =
+		(allVideos[
+			property.imageFolder as keyof ReturnType<typeof useProjectVideos>
+		] as string[]) || [];
+
 	const mainImage =
 		images.length > 0
 			? images.find(
@@ -285,6 +293,32 @@ export default function PropertyDetail() {
 								</div>
 							)}
 						</section>
+
+						{videos.length > 0 && (
+							<section className="mt-12">
+								<H2 className="mb-6 text-gray-900 normal-case text-3xl">
+									Project Videos
+								</H2>
+								<div className="grid gap-6 md:grid-cols-2">
+									{videos.map((video) => (
+										<div
+											key={video}
+											className="relative aspect-video overflow-hidden rounded-lg bg-gray-900 shadow-lg"
+										>
+											<video
+												src={video}
+												controls
+												className="h-full w-full"
+												preload="metadata"
+											>
+												<track kind="captions" src="" label="English" default />
+												Your browser does not support the video tag.
+											</video>
+										</div>
+									))}
+								</div>
+							</section>
+						)}
 					</div>
 
 					<div className="lg:col-span-1">

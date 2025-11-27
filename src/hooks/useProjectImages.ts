@@ -169,6 +169,14 @@ const WM_apartments = Object.values(
 	}) as Record<string, string>,
 );
 
+const Aspire = Object.values(
+	import.meta.glob("../images/Aspire/*.{jpg,jpeg,JPG,JPEG}", {
+		eager: true,
+		query: "?url",
+		import: "default",
+	}) as Record<string, string>,
+);
+
 export function useProjectImages() {
 	return {
 		Buildings,
@@ -193,5 +201,6 @@ export function useProjectImages() {
 		Fedora_x_Tribly,
 		Ten310,
 		WM_apartments,
+		Aspire,
 	};
 }
