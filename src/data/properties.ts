@@ -354,7 +354,7 @@ export const properties: Property[] = [
 		shortDescription:
 			"Multi-family residential project with efficient electrical systems and modern unit amenities.",
 		fullDescription:
-			"Alvarado Apartments demonstrates our commitment to delivering quality electrical work for multi-family residential projects. This development features energy-efficient electrical systems throughout, modern unit electrical packages, and comprehensive common area lighting. The project was completed on schedule and within budget while exceeding quality standards.",
+			"Located in Westlake, Alvarado apartments is a new construction apartment complex that consist of 60 apartment units with two subterranean parking levels and six stories high, amenities featured are a recreation room and a landscaped sundeck, this project was completed in the fall of 2024.",
 		scope: [
 			"Multi-family electrical systems",
 			"Unit electrical packages",
@@ -445,7 +445,7 @@ export const properties: Property[] = [
 		shortDescription:
 			"Innovative mixed-use project combining residential living with commercial spaces and modern electrical infrastructure.",
 		fullDescription:
-			"Fedora x Tribly represents innovative urban development with seamlessly integrated residential and commercial electrical systems. This unique project required creative solutions to serve diverse electrical needs while maintaining architectural integrity. Our team delivered flexible, efficient electrical systems that support both residential comfort and commercial functionality.",
+			"Fedora x Trilby is a new ground up construction of 7 story residential multifamily building with 2 levels of subterranean parking and 92 units. This luxury apartment sits in the heart of Koreatown and has a list of amenities such as a courtyard, conference rooms, Bocce ball court, Clubroom, Dog run, two fitness centers and much more. This project was successfully completed in the spring of 2022 .",
 		scope: [
 			"Mixed-use electrical design",
 			"Residential unit systems",
@@ -475,7 +475,7 @@ export const properties: Property[] = [
 		shortDescription:
 			"Boutique residential building with premium electrical systems and sophisticated lighting design.",
 		fullDescription:
-			"Ten(310) is a boutique residential building where attention to detail is paramount. Our electrical work includes premium systems throughout, with sophisticated lighting design, high-end fixtures, and comprehensive power distribution. The project demonstrates our capability to deliver exceptional quality on smaller, detail-oriented projects.",
+			"In the middle of Century city, Ten(310) is a 92 unit apartment building standing 6 stories high with one subterranean parking level and another ground parking level. Its amenities include a rooftop pool, rooftop terrace, fitness studio, and a lounge, successfully completed in the winter of 2025.",
 		scope: [
 			"Boutique residential electrical",
 			"Premium lighting design",
@@ -504,7 +504,7 @@ export const properties: Property[] = [
 		shortDescription:
 			"Modern apartment community with complete electrical systems and contemporary amenities.",
 		fullDescription:
-			"WM Apartments features modern electrical systems designed for contemporary urban living. This project includes comprehensive electrical infrastructure supporting residential units, common amenities, and building systems. Our work emphasizes reliability, efficiency, and code compliance while meeting the demands of modern apartment living.",
+			"WM apartments  located in the city limits of  Los Angeles and Culver city consist of 137 units with two subterranean parking levels and is eight stories high, amenities featured are pool/ SPA, fitness center, clubhouse, roof terrace and a business center, successfully completed in the fall of 2024.",
 		scope: [
 			"Residential electrical systems",
 			"Unit power distribution",
