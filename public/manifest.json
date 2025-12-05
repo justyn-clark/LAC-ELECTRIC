@@ -8,9 +8,15 @@
 	"icons": [
 		{
 			"src": "/maskable_icon.png",
-			"sizes": "512x512",
+			"sizes": "127x127",
 			"type": "image/png",
-			"purpose": "any maskable"
+			"purpose": "any"
+		},
+		{
+			"src": "/maskable_icon.png",
+			"sizes": "127x127",
+			"type": "image/png",
+			"purpose": "maskable"
 		}
 	]
 }

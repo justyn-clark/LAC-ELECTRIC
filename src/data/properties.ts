@@ -264,7 +264,7 @@ export const properties: Property[] = [
 		shortDescription:
 			"Modern residential development with state-of-the-art electrical systems and smart building features.",
 		fullDescription:
-			"Located in the heart of Los Angeles, 1180 S. La Brea represents the latest in residential electrical design. This project features complete electrical systems designed for modern living, including smart home integration, energy management systems, and comprehensive amenity space electrical. Our team delivered a sophisticated electrical solution that supports the building's contemporary lifestyle offerings.",
+			"1180 S. La brea is a 7 story residential multifamily building with 2 levels of parking and 67 units. The Mediterranean style building is in the Mid Wilshire area and has amenities such as rooftop deck, pool, fitness center, recreation room and 1 level of retail space, successfully completed in 2023.",
 		scope: [
 			"Complete electrical installation",
 			"Smart building infrastructure",
@@ -294,7 +294,7 @@ export const properties: Property[] = [
 		shortDescription:
 			"Urban mixed-use development with integrated residential and commercial electrical systems.",
 		fullDescription:
-			"1450 Washington combines residential living with ground-floor commercial spaces in a modern urban setting. This project required sophisticated electrical planning to serve diverse needs while maintaining energy efficiency and code compliance. Our installation includes separate metering for commercial tenants, residential units, and common areas, along with smart building controls.",
+			"1450 Washington Blvd, close to the heart of downtown Los Angeles, The View is a 50 unit apartment building standing 6 stories high with one subterranean parking level. Its amenities consist of a fitness center, and rooftop deck, this project was successfully completed in the spring of 2024.",
 		scope: [
 			"Mixed-use electrical systems",
 			"Residential and commercial metering",
@@ -324,7 +324,7 @@ export const properties: Property[] = [
 		shortDescription:
 			"Luxury residential complex with premium electrical systems and advanced home automation.",
 		fullDescription:
-			"4000 MontClair sets a new standard for luxury residential electrical work. Each residence features premium electrical systems with whole-home automation capabilities, designer lighting controls, and energy monitoring. The property includes resort-style amenities with sophisticated lighting and power systems to enhance the resident experience.",
+			"Orion at 4000 Mont Clair sits at 4 stories high with 15 apartment units and an expansive rooftop deck. Located in the surrounding area of Los Angeles this apartment building is perfect for anyone looking to have a cozy experience of the LA lifestyle and successfully completed in the spring of 2025.",
 		scope: [
 			"Luxury residential electrical",
 			"Home automation infrastructure",
@@ -384,7 +384,7 @@ export const properties: Property[] = [
 		shortDescription:
 			"Large-scale apartment community with comprehensive electrical infrastructure and smart systems.",
 		fullDescription:
-			"Bermuda Apartments is one of our largest residential projects, featuring complete electrical systems for over 150 units. This extensive project included sophisticated power distribution, comprehensive lighting design for common areas and units, and infrastructure to support modern amenities. Our team coordinated closely with other trades to ensure seamless integration and timely project completion.",
+			"Bermuda apartments are right next to the 405 and 118 freeways; this multifamily residential building consists of 52 units and is 4 stories high with grade level parking garage. Amenities included are a fitness room, recreation room, rooftop deck and EV charging stations, this project was successfully completed in the spring of 2025.",
 		scope: [
 			"Large-scale residential electrical",
 			"Power distribution systems",
@@ -415,7 +415,7 @@ export const properties: Property[] = [
 		shortDescription:
 			"Contemporary apartment building with modern electrical systems and energy-efficient solutions.",
 		fullDescription:
-			"Draco Apartments showcases contemporary residential electrical design with a focus on energy efficiency and resident comfort. The project includes complete electrical systems for all units, energy-efficient lighting throughout common areas, and infrastructure to support modern lifestyle amenities. Our work emphasizes both functionality and aesthetic appeal.",
+			"Draco apartments is directly across campus from USC this beautiful property is perfect for students attending USC. With 15 units and two amazing sky decks, this project was successfully completed in the spring of 2020.",
 		scope: [
 			"Residential electrical systems",
 			"Energy-efficient lighting",

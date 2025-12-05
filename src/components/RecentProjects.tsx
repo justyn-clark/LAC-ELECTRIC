@@ -1,17 +1,30 @@
 import { Link } from "react-router-dom";
 import { getContent } from "../content";
-import nve6 from "../images/NveApartments/nve-6.jpg";
-import nve10 from "../images/NveApartments/nve-10.jpg";
-import nve27 from "../images/NveApartments/nve-27.jpg";
-import nve40 from "../images/NveApartments/nve-40.jpg";
+import { useProjectImages } from "../hooks/useProjectImages";
 import { H2 } from "./Headings";
 import HR from "./HR";
 import InnerWrap from "./InnerWrap";
 
-const recentImages = [nve6, nve10, nve27, nve40];
+function getRecentImages() {
+	const allImages = useProjectImages();
+	const nveImages = (allImages.NveApartments as string[]) || [];
+
+	if (nveImages.length === 0) return [];
+
+	// Find the specific images we want to display by filename
+	const nve6 = nveImages.find((img) => img.includes("nve-6") && !img.includes("main"));
+	const nve10 = nveImages.find((img) => img.includes("nve-10"));
+	const nve27 = nveImages.find((img) => img.includes("nve-27"));
+	const nve40 = nveImages.find((img) => img.includes("nve-40"));
+
+	// Return in order, filtering out undefined values
+	return [nve6, nve10, nve27, nve40].filter((img): img is string => Boolean(img));
+}
 
 export default function RecentProjects() {
 	const { projects } = getContent();
+	const recentImages = getRecentImages();
+
 	return (
 		<section className="flex w-full flex-col bg-[#e1e2e4] py-12">
 			<InnerWrap>
